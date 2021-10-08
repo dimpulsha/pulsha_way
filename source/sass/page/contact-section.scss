@@ -1,0 +1,36 @@
+.contact-section__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.contact-section_content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 455px;
+  background-image: url("../../img/bg/contact-bg@1x.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+.contact-section__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 656px;
+  height: 315px;
+  background-color: $background-light;
+  box-shadow: 0 4px 30px $form-shadow;
+  border-radius: 5px;
+}
+
+.contact-section__form-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}

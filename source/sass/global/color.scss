@@ -1,14 +1,17 @@
 //цвета по палитре
+$black: #000000;
 $super-dark:#141517;
 $dark: #2c2e3f;
 $accented: #fe7865;
 $accented-active: #f17d4b;
 $dark-07: rgba(44, 46, 63, 0.7);
 $dark-03: rgba(44, 46, 63, 0.3);
+$more-dark-01: rgba(41, 54, 66, 0.1);
 $light: #fbf8f8;
 $white: #ffffff;
 $blue: rgb(125, 180, 220);
 $shadow: rgba(20, 21, 23, 0.6);
+$shadow-07: rgba(20, 21, 23, 0.7);
 $white-07: rgba(255, 255, 255, 0.7);
 
 
@@ -24,8 +27,11 @@ $hover-button: $accented-active;
 $active-link: $dark-07;
 $fill-background: $blue;
 $deco-background: $accented;
+$deko-background-grey:$dark-03;
 $background-light: $white;
 $place-item-shadow: $shadow;
 $place-item-deco-border: $white-07;
 $tab-border: $dark-03;
-
+$price-link-color: $black;
+$price-title: $dark-07;
+$form-shadow:$more-dark-01;

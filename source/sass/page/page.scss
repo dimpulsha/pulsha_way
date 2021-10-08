@@ -1,3 +1,9 @@
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
 .page__word-background {
   max-width: 1444px;
   margin: 0 auto;

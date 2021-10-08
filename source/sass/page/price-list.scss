@@ -1,0 +1,15 @@
+.price-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-left: -30px;
+}
+
+.price-list__item {
+  box-sizing: border-box;
+  max-width: 370px;
+  margin-left: 30px;
+  border: 1px solid $deko-background-grey;
+  border-radius: 6px;
+}

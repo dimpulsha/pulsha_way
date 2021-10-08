@@ -292,57 +292,77 @@
           </ul>
         </div>
       </section>
-      <section>
-        <h2>Цены</h2>
-        <p>Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и
-          возможностей.
-          Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
-        <p>Свяжитесь с нами</p>
-        <a href="tel:++749978468446">+7 (499) -784-684-46</a>
-        <ul>
-          <li>
-            <h3>Комплексный</h3>
-            <p>$1999</p>
-            <p>Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-            <ul>
-              <li>Разработанный маршрут с гидом группы</li>
-              <li>Перелет, трансфер и проживание в отелях</li>
-              <li>Завтраки, ужины в отелях и ланчи на природе</li>
-              <li>Экскурсии по удивительно красивым местам Европы</li>
-            </ul>
-            <button type="button">Купить тур сейчас</button>
-          </li>
-          <li>
-            <h3>Экономный</h3>
-            <p>$1399</p>
-            <p>Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-            <ul>
-              <li>Разработанный маршрут с гидом группы</li>
-              <li>Перелет и трансфер</li>
-              <li>Проживание в хостелах при отелях</li>
-              <li>Только завтраки в отелях</li>
-              <li>Экскурсии по удивительно красивым местам Европы</li>
-            </ul>
-            <button type="button">Купить тур сейчас</button>
-          </li>
-        </ul>
+      <section class="price-section">
+        <div class="price-section__wrapper">
+          <div class="price-section__content-wrapper">
+            <h2 class="price-section__title">Цены</h2>
+            <div class="deco-line"></div>
+            <p class="price-section__text">Специально для Вас мы разработали 2 пакета цен с разными условиями,
+              отталкиваясь от Ваших потребностей и
+              возможностей.
+              Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
+            <p class="price-section__contact-text">Свяжитесь с нами</p>
+            <a class="price-section__contact-link" href="tel:++749978468446">+7 (499) -784-684-46</a>
+          </div>
+          <ul class="price-section__price-list price-list">
+            <li class="price-list__item product">
+              <div class="product__header">
+                <h3 class="product__title">Комплексный</h3>
+                <p class="product_price">$1999</p>
+              </div>
+              <p class="product_attention-text">Ознакомьтесь с перечнем того, <br> что входит в данный пакет</p>
+              <div class="deco-line deco-line--price"></div>
+              <ul class="product__feature-list">
+                <li class="product__feature-item">Разработанный маршрут с гидом группы</li>
+                <li class="product__feature-item">Перелет, трансфер и проживание в отелях</li>
+                <li class="product__feature-item">Завтраки, ужины в отелях и ланчи на природе</li>
+                <li class="product__feature-item">Экскурсии по удивительно красивым местам Европы</li>
+              </ul>
+              <button class="button product_button" type="button">Купить тур сейчас</button>
+            </li>
+            <li class="price-list__item product">
+              <div class="product__header">
+                <h3 class="product__title">Экономный</h3>
+                <p class="product_price">$1399</p>
+              </div>
+              <p class="product_attention-text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              <div class="deco-line deco-line--price"></div>
+              <ul class="product__feature-list">
+                <li class="product__feature-item">Разработанный маршрут с гидом группы</li>
+                <li class="product__feature-item">Перелет и трансфер</li>
+                <li class="product__feature-item">Проживание в хостелах при отелях</li>
+                <li class="product__feature-item">Только завтраки в отелях</li>
+                <li class="product__feature-item">Экскурсии по удивительно красивым местам Европы</li>
+              </ul>
+              <button class="button product_button" type="button">Купить тур сейчас</button>
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
-    <section>
-      <h2 class="visually-hidden">Обратная связь</h2>
-      <p>У Вас остались вопросы?</p>
-      <p>Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-      <form action="#" method="post">
-        <div>
-          <label for="tel-id"><span class="visually-hidden">Телефон:</span>+7</label>
-          <input type="tel" name="phone" id="tel-id" placeholder="Введите 10 цифр номера" required>
+    <section class="contact-section">
+      <div class="contact-section__wrapper">
+        <div class="contact-section__form-wrapper">
+          <div class="contact-section_content">
+            <h2 class="visually-hidden">Обратная связь</h2>
+            <form class="contact-section__form" action="#" method="post">
+              <p class="contact-section__title">У Вас остались вопросы?</p>
+              <p class="contact-section_text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+              <div class="contact-section__form-body">
+                <div class="contact-section__field">
+                  <label for="tel-id"><span class="visually-hidden">Телефон:</span>+7</label>
+                  <input type="tel" name="phone" id="tel-id" placeholder="Введите 10 цифр номера" required>
+                </div>
+                <div class="contact-section__field">
+                  <label for="email-id">E-mail</label>
+                  <input type="email" name="email" id="email-id">
+                </div>
+              </div>
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
         </div>
-        <div>
-          <label for="email-id">E-mail</label>
-          <input type="email" name="email" id="email-id">
-        </div>
-        <button type="submit">Отправить</button>
-      </form>
+      </div>
     </section>
   </main>
   <footer>
