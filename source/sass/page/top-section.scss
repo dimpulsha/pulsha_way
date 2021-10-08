@@ -1,0 +1,44 @@
+.top-section {
+  height: 860px;
+  margin-bottom: 200px;
+  background-image: url("../../img/bg/top-background@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $fill-background;
+}
+
+.top-section__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.top-section__data-wrapper {
+  margin-top: 185px;
+  margin-right: 58px;
+  width: 412px;
+}
+
+.top-section__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.11px;
+  color: $text-inversion-light;
+}
+
+.top-section__text {
+  color: $text-inversion-light;
+  margin: 0;
+  margin-bottom: 39px;
+}
+
+.top-section__link {
+  color: $text-inversion-light;
+}

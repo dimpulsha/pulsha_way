@@ -1,3 +1,22 @@
-h1 {
-  color: red;
-}
+// импорт глобальных стилей
+
+@import "./global/global.scss";
+@import "./global/fonts.scss";
+@import "./global/view-port.scss";
+@import "./global/color.scss";
+
+//импорт стилей
+@import "./page/body.scss";
+@import "./page/button.scss";
+@import "./page/deco-line.scss";
+@import "./page/header.scss";
+@import "./page/site-nav.scss";
+@import "./page/top-section.scss";
+@import "./page/owerview-section.scss";
+@import "./page/place-list.scss";
+@import "./page/place-item.scss";
+@import "./page/country-section.scss";
+@import "./page/tab-list.scss";
+@import "./page/tab-button.scss";
+@import "./page/tab-body.scss";
+

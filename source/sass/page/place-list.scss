@@ -1,0 +1,15 @@
+.place-list {
+  margin: 0;
+  padding: 0;
+  margin-right: -60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.place-list__item {
+  width: 350px;
+  height: 430px;
+  margin-right: 60px;
+  margin-bottom: 100px;
+}

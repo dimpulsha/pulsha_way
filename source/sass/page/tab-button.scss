@@ -1,0 +1,20 @@
+.tab-button {
+  display: block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.415px;
+  color: $text-tab-button;
+  // border-bottom: 1px solid black;
+  // padding-right: 99px;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+
+.tab-button--active {
+  color: $text-accented;
+}

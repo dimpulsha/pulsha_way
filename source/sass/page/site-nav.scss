@@ -1,0 +1,32 @@
+.site-nav {
+  display: flex;
+  min-width: 200px;
+  margin-right: 70px;
+}
+
+.site-nav__button {
+  display: none;
+}
+
+.site-nav__menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.site-nav__menu-item {
+  margin-left: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $title-color;
+}
+
+.site-nav__menu-item:hover {
+  color: $hover-link;
+}
+
+.site-nav__menu-item:active {
+  color: $active-link;
+  font-weight: 600;
+}

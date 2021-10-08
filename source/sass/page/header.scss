@@ -1,0 +1,36 @@
+.header {
+  height: 100px;
+  outline: 1px solid darkgreen;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  height: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $title-color;
+  text-decoration: underline;
+}
+
+.header__contact-link:hover {
+  color: $hover-link;
+}
+
+.header__contact-link:active {
+  font-weight: 600;
+  color: $active-link;
+}

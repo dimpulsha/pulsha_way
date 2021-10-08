@@ -1,0 +1,31 @@
+//цвета по палитре
+$super-dark:#141517;
+$dark: #2c2e3f;
+$accented: #fe7865;
+$accented-active: #f17d4b;
+$dark-07: rgba(44, 46, 63, 0.7);
+$dark-03: rgba(44, 46, 63, 0.3);
+$light: #fbf8f8;
+$white: #ffffff;
+$blue: rgb(125, 180, 220);
+$shadow: rgba(20, 21, 23, 0.6);
+$white-07: rgba(255, 255, 255, 0.7);
+
+
+// цвета по назначению
+$text-color: $dark-07;
+$title-color: $dark;
+$text-inversion-light: $white;
+$text-accented: $accented;
+$text-tab-button: $dark-03;
+$hover-link: $accented;
+$button: $accented;
+$hover-button: $accented-active;
+$active-link: $dark-07;
+$fill-background: $blue;
+$deco-background: $accented;
+$background-light: $white;
+$place-item-shadow: $shadow;
+$place-item-deco-border: $white-07;
+$tab-border: $dark-03;
+
