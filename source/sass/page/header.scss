@@ -1,9 +1,17 @@
 .header {
-  height: 100px;
+  display: flex;
+  align-items: center;
+  min-height: 100px;
   outline: 1px solid darkgreen;
+
+  @media (max-width: $tablet-max-width) {
+    min-height: 50px;
+  }
 }
 
 .header__wrapper {
+  position: relative;
+  flex-grow: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,11 +19,27 @@
   height: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 1px solid red;
+  //outline: 1px solid red;
+
+  @media (max-width: $tablet-max-width) {
+    max-width: 100%;
+    padding: 0;
+    padding-left: 21px;
+  }
 }
 
 .header__logo {
   margin-right: auto;
+}
+
+.header__logo-img {
+  width: 57px;
+  height: 22px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 44px;
+    height: 16px;
+  }
 }
 
 .header__contact-link {
@@ -24,6 +48,10 @@
   line-height: 17px;
   color: $title-color;
   text-decoration: underline;
+
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
 }
 
 .header__contact-link:hover {

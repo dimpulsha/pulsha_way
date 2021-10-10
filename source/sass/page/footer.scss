@@ -1,0 +1,143 @@
+.footer {
+  margin-bottom: 74px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 54px;
+  }
+}
+
+.footer__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media (max-width: $tablet-max-width) {
+    box-sizing: border-box;
+    grid-template-columns: 51% 49%;
+    grid-template-rows: auto auto;
+
+    grid-template-areas:
+      "travel contact"
+      "corp corp";
+
+    width: 100%;
+    padding: 0 21px;
+  }
+}
+
+.footer__section--travel {
+  border-right: 1px solid $deko-background-grey;
+
+  @media (max-width: $tablet-max-width) {
+    grid-area: travel;
+    margin-bottom: 30px;
+  }
+}
+
+.footer__section--contact {
+  box-sizing: border-box;
+  padding: 0 65px;
+  border-right: 1px solid $deko-background-grey;
+
+  @media (max-width: $tablet-max-width) {
+    grid-area: contact;
+    border-right: none;
+    padding-left: 50px;
+    padding-right: 0;
+  }
+}
+
+.footer__section--corporate {
+  box-sizing: border-box;
+  padding-left: 55px;
+
+  @media (max-width: $tablet-max-width) {
+    grid-area: corp;
+    padding-left: 0;
+    border-top: 1px solid $deko-background-grey;
+    text-align: center;
+  }
+}
+
+.footer__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $footer-title;
+}
+
+.footer__title--corporate {
+  @media (max-width: $tablet-max-width) {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+// .footer__section {
+//   border-right: 1px solid $deko-background-grey;
+// }
+
+.footer__travel {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-max-width) {
+    margin-right: 40px;
+  }
+}
+
+.footer__travel-list {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 33%;
+}
+
+.footer__travel-item {
+  padding-right: 10px;
+  margin-bottom: 3px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.footer__travel-item:last-child {
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 0;
+  }
+}
+
+.footer__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: $footer-text;
+
+  @media (max-width: $tablet-max-width) {
+    line-height: 17px;
+  }
+}
+
+.footer__text--corporate {
+  line-height: 24px;
+}
+
+.footer__contact-link {
+  display: block;
+  margin-bottom: 23px;
+  color: $footer-link;
+  text-decoration: underline;
+}
+
+.footer__contact-link--email {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__contact-link--phone {
+  font-size: 16px;
+  line-height: 32px;
+}

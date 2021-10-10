@@ -1,0 +1,53 @@
+.modal_buy {
+  display: none;
+  position: relative;
+  // display: flex;
+  width: 728px;
+  height: 444px;
+  background-color: $modal-background;
+  box-shadow: 0 4px 30px $form-shadow;
+}
+
+.modal--active {
+  display: flex;
+}
+
+.modal__content-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__form-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__close-button {
+  position: absolute;
+  display: none;
+}
+
+.modal__titie {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 43px;
+  color: $modal-text;
+}
+
+.modal_ok {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__msg-text {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 43px;
+  color: $modal-text;
+}

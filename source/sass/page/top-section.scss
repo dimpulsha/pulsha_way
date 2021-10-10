@@ -6,6 +6,12 @@
   background-position: center;
   background-size: cover;
   background-color: $fill-background;
+
+  @media (max-width: $tablet-max-width) {
+    height: 344px;
+    margin-bottom: 80px;
+    background-image: url("../../img/bg/top-background-pad@1x.jpg");
+  }
 }
 
 .top-section__wrapper {
@@ -14,12 +20,26 @@
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media (max-width: $tablet-max-width) {
+    max-width: 100%;
+    padding: 0;
+    display: block;
+  }
 }
 
 .top-section__data-wrapper {
   margin-top: 185px;
   margin-right: 58px;
   width: 412px;
+
+  @media (max-width: $tablet-max-width) {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 60px;
+    text-align: center;
+  }
 }
 
 .top-section__title {
@@ -31,14 +51,33 @@
   line-height: 80px;
   letter-spacing: -1.11px;
   color: $text-inversion-light;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+  }
 }
 
 .top-section__text {
   color: $text-inversion-light;
   margin: 0;
   margin-bottom: 39px;
+
+  @media (max-width: $tablet-max-width) {
+    padding: 0 185px;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 27px;
+    letter-spacing: -0.466667px;
+  }
 }
 
 .top-section__link {
   color: $text-inversion-light;
+
+  @media (max-width: $tablet-max-width) {
+    margin: 0 auto;
+  }
 }

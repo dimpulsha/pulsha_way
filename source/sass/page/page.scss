@@ -1,11 +1,17 @@
-.page {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-}
+// .page {
+//   // display: grid;
+//   // grid-template-rows: max-content 1fr auto;
+//   // min-height: 100vh;
+// }
 
 .page__word-background {
   max-width: 1444px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }

@@ -1,11 +1,26 @@
 .owerview-section {
   margin-bottom: 124px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 95px;
+  }
 }
 
 .owerview-section__wrapper {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media (max-width: $tablet-max-width) {
+    max-width: 100%;
+    padding: 0 76px;
+  }
+}
+
+.owerview-section__head {
+  @media (max-width: $tablet-max-width) {
+    text-align: center;
+  }
 }
 
 .owerview-section__title {
@@ -17,9 +32,28 @@
   line-height: 80px;
   letter-spacing: -1.245px;
   color: $title-color;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 45px;
+  }
 }
+
+.owerview-section__title br {
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
+}
+
 
 .owerview-section__text {
   margin-top: 30px;
   margin-bottom: 55px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-top: 0;
+    line-height: 28px;
+    letter-spacing: -0.466667px;
+  }
 }

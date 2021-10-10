@@ -14,6 +14,14 @@
   border: none;
   cursor: pointer;
   //outline: 1px solid olive;
+
+  @media (max-width: $tablet-max-width) {
+    height: 50px;
+    width: 250px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
 
 .button:hover {
@@ -24,8 +32,16 @@
   width: 340px;
   padding: 0 40px;
   justify-content: space-between;
+
+  @media (max-width: $tablet-max-width) {
+    width: 250px;
+  }
 }
 
 .button--tab {
+  padding: 0 40px;
+}
+
+.button--submit-contact {
   padding: 0 40px;
 }

@@ -1,7 +1,11 @@
 .site-nav {
-  display: flex;
+  // display: flex;
   min-width: 200px;
   margin-right: 70px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-right: 0;
+  }
 }
 
 .site-nav__button {
@@ -12,6 +16,13 @@
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
+
+  //звглушка когда нет JS
+  @media (max-width: $tablet-max-width) {
+    display: block;
+    margin-top: 30px;
+    // height: 568px;
+  }
 }
 
 .site-nav__menu-item {
@@ -20,10 +31,34 @@
   font-size: 14px;
   line-height: 17px;
   color: $title-color;
+
+  @media (max-width: $tablet-max-width) {
+    display: none;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    // width: 320px;
+    // height: 60px;
+    // padding: 0 16px;
+    // margin-bottom: 30px;
+    // margin-left: 0;
+    // font-weight: 600;
+    // font-size: 20px;
+    // line-height: 28px;
+    // background-color: $menu-background;
+  }
 }
 
 .site-nav__menu-item:hover {
   color: $hover-link;
+}
+
+.site-nav__menu-ico {
+  display: none;
+
+  @media (max-width: $tablet-max-width) {
+    display: initial;
+  }
 }
 
 .site-nav__menu-item:active {

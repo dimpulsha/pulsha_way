@@ -12,13 +12,39 @@
 <body class="page">
   <header class="header">
     <div class="header__wrapper">
-      <a class="header__logo"><img src="./img/logo.svg" alt="Логотип компании WAY"></a>
-      <nav class="site-nav header__nav">
-        <button class="site-nav__button" type="button"><span class="visually-hidden">Отобразить меню</span></button>
+      <a class="header__logo"><img class="header__logo-img" src="./img/logo.svg" alt="Логотип компании WAY"></a>
+      <nav class="site-nav header__nav site-nav--nojs">
+        <button class="site-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <button class="site-nav__button" type="button"><span class="visually-hidden">Скрыть меню</span></button>
-        <ul class="site-nav__menu site-nav__menu--nojs">
-          <li class="site-nav__menu-item"><a href="#about">О путешествии</a></li>
-          <li class="site-nav__menu-item"><a href="#price">Цены</a></li>
+        <ul class="site-nav__menu">
+          <li class="site-nav__menu-item"><a href="#about">О путешествии</a>
+            <svg class="site-nav__menu-ico" width="8" height="12" viewBox="0 0 8 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z"
+                  fill="#2C2E3F" fill-opacity="0.5" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="12" height="7.4" fill="white" transform="translate(0 12) rotate(-90)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </li>
+          <li class="site-nav__menu-item"><a href="#price">Цены</a>
+            <svg class="site-nav__menu-ico" width="8" height="12" viewBox="0 0 8 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z"
+                  fill="#2C2E3F" fill-opacity="0.5" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="12" height="7.4" fill="white" transform="translate(0 12) rotate(-90)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </li>
         </ul>
       </nav>
       <a class="header__contact-link" href="tel:++749978468446">+7 (499) -784-684-46</a>
@@ -53,8 +79,13 @@
             <a class="place-item__link" href="">
               <!-- переверствать - поддержка разных разрешений -->
               <div class="place-item__img-wrapper">
-                <img class="place-item__img" src="img/content/Greece@1px.jpg" alt="Город на скале" width="350"
-                  height="430">
+                <picture>
+                  <source type="image/jpeg" media="(max-width: 1023px)"
+                    srcset="img/content/greece-tab@1x.jpg 1x, img/content/greece-tab@2x.jpg 2x">
+                  <source type="image/jpeg" srcset="img/content/greece@1x.jpg 1x, img/content/greece@2x.jpg 2x">
+                  <img class="place-item__img" src="img/content/greece@1px.jpg" alt="Город на скале" width="350"
+                    height="430">
+                </picture>
               </div>
               <h3 class="place-item__title">Греция</h3>
               <p class="place-item_link-text">Смотреть подробнее</p>
@@ -63,8 +94,13 @@
           <li class="place-list__item place-item">
             <a class="place-item__link" href="">
               <div class="place-item__img-wrapper">
-                <img class="place-item__img" src="img/content/Albania@1x.jpg" alt="Город на скале" width="350"
-                  height="430">
+                <picture>
+                  <source type="image/jpeg" media="(max-width: 1023px)"
+                    srcset="img/content/albania-tab@1x.jpg 1x, img/content/albania-tab@2x.jpg 2x">
+                  <source type="image/jpeg" srcset="img/content/albania@1x.jpg 1x, img/content/albania@2x.jpg 2x">
+                  <img class="place-item__img" src="img/content/albania@1x.jpg" alt="Город на скале" width="350"
+                    height="430">
+                </picture>
               </div>
               <h3 class="place-item__title">Албания</h3>
               <p class="place-item_link-text">Смотреть подробнее</p>
@@ -73,8 +109,13 @@
           <li class="place-list__item place-item">
             <a class="place-item__link" href="">
               <div class="place-item__img-wrapper">
-                <img class="place-item__img" src="img/content/Macedonia@1x.jpg" alt="Город на скале" width="350"
-                  height="430">
+                <picture>
+                  <source type="image/jpeg" media="(max-width: 1023px)"
+                    srcset="img/content/macedonia-tab@1x.jpg 1x, img/content/macedonia-tab@2x.jpg 2x">
+                  <source type="image/jpeg" srcset="img/content/macedonia@1x.jpg 1x, img/content/macedonia@2x.jpg 2x">
+                  <img class="place-item__img" src="img/content/macedonia@1x.jpg" alt="Город на скале" width="350"
+                    height="430">
+                </picture>
               </div>
               <h3 class="place-item__title">Македония</h3>
               <p class="place-item_link-text">Смотреть подробнее</p>
@@ -83,8 +124,13 @@
           <li class="place-list__item place-item">
             <a class="place-item__link" href="">
               <div class="place-item__img-wrapper">
-                <img class="place-item__img" src="img/content/Montenegro@1x.jpg" alt="Город на скале" width="350"
-                  height="430">
+                <picture>
+                  <source type="image/jpeg" media="(max-width: 1023px)"
+                    srcset="img/content/montenegro-tab@1x.jpg 1x, img/content/montenegro-tab@2x.jpg 2x">
+                  <source type="image/jpeg" srcset="img/content/montenegro@1x.jpg 1x, img/content/montenegro@2x.jpg 2x">
+                  <img class="place-item__img" src="img/content/montenegro@1x.jpg" alt="Город на скале" width="350"
+                    height="430">
+                </picture>
               </div>
               <h3 class="place-item__title">Черногория</h3>
               <p class="place-item_link-text">Смотреть подробнее</p>
@@ -93,8 +139,13 @@
           <li class="place-list__item place-item">
             <a class="place-item__link" href="">
               <div class="place-item__img-wrapper">
-                <img class="place-item__img" src="img/content/Croatia@1x.jpg" alt="Город на скале" width="350"
-                  height="430">
+                <picture>
+                  <source type="image/jpeg" media="(max-width: 1023px)"
+                    srcset="img/content/croatia-tab@1x.jpg 1x, img/content/croatia-tab@2x.jpg 2x">
+                  <source type="image/jpeg" srcset="img/content/croatia@1x.jpg 1x, img/content/croatia@2x.jpg 2x">
+                  <img class="place-item__img" src="img/content/croatia@1x.jpg" alt="Город на скале" width="350"
+                    height="430">
+                </picture>
               </div>
               <h3 class="place-item__title">Хорватия</h3>
               <p class="place-item_link-text">Смотреть подробнее</p>
@@ -135,8 +186,13 @@
                 <button class="tab-body__button button button--tab " type="button">Купить тур сейчас</button>
               </div>
               <div class="tab-body__img-wrapper">
-                <img class="tab-body__img" src="./img/content/tab-greece@1x.jpg" alt="Монастырь Метеоры на фоне гор"
-                  width="430" height="596">
+                <picture>
+                  <source type="image/jpeg" media="(max-width: 1023px)"
+                    srcset="img/content/tab-greece-pad@1x.jpg 1x, img/content/tab-greece-pad@2x.jpg 2x">
+                  <source type="image/jpeg" srcset="img/content/tab-greece@1x.jpg 1x, img/content/tab-greece@2x.jpg 2x">
+                  <img class="tab-body__img" src="./img/content/tab-greece@1x.jpg" alt="Монастырь Метеоры на фоне гор"
+                    width="430" height="596">
+                </picture>
               </div>
               <div class="tab-body__review">
                 <h4 class="tab-body__review-title"> Отзывы</h4>
@@ -170,8 +226,13 @@
                 <button class="tab-body__button button button--tab " type="button">Купить тур сейчас</button>
               </div>
               <div class="tab-body__img-wrapper">
-                <img class="tab-body__img" src="./img/content/tab-greece@1x.jpg" alt="Монастырь Метеоры на фоне гор"
-                  width="430" height="596">
+                <picture>
+                  <source type="image/jpeg" media="(max-width: 1023px)"
+                    srcset="img/content/tab-greece-pad@1x.jpg 1x, img/content/tab-greece-pad@2x.jpg 2x">
+                  <source type="image/jpeg" srcset="img/content/tab-greece@1x.jpg 1x, img/content/tab-greece@2x.jpg 2x">
+                  <img class="tab-body__img" src="./img/content/tab-greece@1x.jpg" alt="Монастырь Метеоры на фоне гор"
+                    width="430" height="596">
+                </picture>
               </div>
               <div class="tab-body__review">
                 <h4 class="tab-body__review-title"> Отзывы</h4>
@@ -310,7 +371,9 @@
                 <h3 class="product__title">Комплексный</h3>
                 <p class="product_price">$1999</p>
               </div>
-              <p class="product_attention-text">Ознакомьтесь с перечнем того, <br> что входит в данный пакет</p>
+              <p class="product_attention-text">Ознакомьтесь с перечнем того,
+                <!-- <br> --> что входит в данный пакет
+              </p>
               <div class="deco-line deco-line--price"></div>
               <ul class="product__feature-list">
                 <li class="product__feature-item">Разработанный маршрут с гидом группы</li>
@@ -348,72 +411,100 @@
             <form class="contact-section__form" action="#" method="post">
               <p class="contact-section__title">У Вас остались вопросы?</p>
               <p class="contact-section_text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-              <div class="contact-section__form-body">
-                <div class="contact-section__field">
-                  <label for="tel-id"><span class="visually-hidden">Телефон:</span>+7</label>
-                  <input type="tel" name="phone" id="tel-id" placeholder="Введите 10 цифр номера" required>
+              <div class="contact-section__form-body form-body">
+                <div class="form-body__field form-body__field--phone">
+                  <label class="form-body__label" for="tel-id"><span class="visually-hidden">Телефон:</span>+7</label>
+                  <input class="form-body__input" type="tel" name="phone" id="tel-id"
+                    placeholder="Введите 10 цифр номера" required>
                 </div>
-                <div class="contact-section__field">
-                  <label for="email-id">E-mail</label>
-                  <input type="email" name="email" id="email-id">
+                <div class="form-body__field form-body__email">
+                  <label class="form-body__label" for="email-id">E-mail</label>
+                  <input class="form-body__input" type="email" name="email" id="email-id">
                 </div>
               </div>
-              <button type="submit">Отправить</button>
+              <button class="button button--submit-contact" type="submit">Отправить</button>
             </form>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <footer>
-    <section>
-      <h2>Следующие путешествия</h2>
-      <ul>
-        <li><a href="">Марсель</a> </li>
-        <li><a href="">Ним</a></li>
-        <li><a href="">Монпелье</a></li>
-        <li><a href="">Барселона</a></li>
-        <li><a href="">Пальма</a></li>
-        <li><a href="">Сардиния</a></li>
-        <li><a href="">Палермо</a></li>
-        <li><a href="">Катания</a></li>
-        <li><a href="">Неаполь</a></li>
-        <li><a href="">Рим</a></li>
-        <li><a href="">Корс</a></li>
-        <li><a href="">Ницца</a></li>
-        <li><a href="">Монако</a></li>
-        <li><a href="">Динь-ле-Бен</a></li>
-        <li><a href="">Гренобль</a></li>
-      </ul>
-    </section>
-    <section>
-      <h2>Наши контакты</h2>
-      <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-      <a href="tel:+749978468446">+7 (499) -784-684-46</a>
-    </section>
-    <section>
-      <h2>Корпоративные путешествия</h2>
-      <p>Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию,
-        помогают
-        поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
-    </section>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <section class="footer__section footer__section--travel">
+        <h2 class="footer__title">Следующие путешествия</h2>
+        <div class="footer__travel">
+          <ul class="footer__travel-list">
+            <li class="footer__travel-item footer__text"><a>Марсель</a> </li>
+            <li class="footer__travel-item footer__text"><a>Ним</a></li>
+            <li class="footer__travel-item footer__text"><a>Монпелье</a></li>
+            <li class="footer__travel-item footer__text"><a>Барселона</a></li>
+            <li class="footer__travel-item footer__text"><a>Пальма</a></li>
+          </ul>
+
+          <ul class="footer__travel-list">
+            <li class="footer__travel-item footer__text"><a>Сардиния</a></li>
+            <li class="footer__travel-item footer__text"><a>Палермо</a></li>
+            <li class="footer__travel-item footer__text"><a>Катания</a></li>
+            <li class="footer__travel-item footer__text"><a>Неаполь</a></li>
+            <li class="footer__travel-item footer__text"><a>Рим</a></li>
+          </ul>
+
+          <ul class="footer__travel-list">
+            <li class="footer__travel-item footer__text"><a>Корс</a></li>
+            <li class="footer__travel-item footer__text"><a>Ницца</a></li>
+            <li class="footer__travel-item footer__text"><a>Монако</a></li>
+            <li class="footer__travel-item footer__text"><a>Динь-ле-Бен</a></li>
+            <li class="footer__travel-item footer__text"><a>Гренобль</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer__section footer__section--contact">
+        <h2 class="footer__title">Наши контакты</h2>
+        <div>
+          <a class="footer__contact-link footer__contact-link--email"
+            href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+          <a class="footer__contact-link footer__contact-link--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+        </div>
+      </section>
+      <section class="footer__section footer__section--corporate">
+        <h2 class="footer__title footer__title--corporate">Корпоративные путешествия</h2>
+        <p class="footer__text footer__text--corporate">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры
+          очень сближают компанию,
+          помогают
+          поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
+      </section>
+    </div>
   </footer>
 
-  <section>
-    <h2>Купить тур</h2>
-    <form action="#" method="post">
-      <label for="modal-tel-id"><span class="visually-hidden">Телефон:</span>+7</label>
-      <input type="tel" name="phone" id="modal-tel-id" placeholder="Введите 10 цифр номера" required>
-      <label for="modal-email-id">E-mail</label>
-      <input type="email" name="email" id="modal-email-id">
-      <button type="submit">Отправить</button>
-    </form>
-    <button type="button"><span class="visually-hidden">Закрыть окно</span></button>
+  <section class="modal modal_buy">
+    <div class="modal__img-wrapper">
+      <img src="img/content/modal@1x.jpg" alt="Морское побережье" width="338" height="444">
+    </div>
+    <div class="modal__content-wrapper">
+      <h2 class="modal__titie">Купить тур</h2>
+      <form action="#" method="post">
+        <div class="modal__form-body form-body">
+          <div class="form-body__field form-body__field--modal form-body__field--phone">
+            <label class="form-body__label" for="tel-id"><span class="visually-hidden">Телефон:</span>+7</label>
+            <input class="form-body__input form-body__input--modal" type="tel" name="phone" id="tel-id"
+              placeholder="Введите 10 цифр номера" required>
+          </div>
+          <div class="form-body__field form-body__email">
+            <label class="form-body__label" for="email-id">E-mail</label>
+            <input class="form-body__input form-body__input--modal" type="email" name="email" id="email-id">
+          </div>
+          <button class="button button--submit-contact" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+    </div>
+    <button class="modal__close-button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
   </section>
-  <section>
+  <section class="modal modal_ok">
     <h2 class="visually-hidden">Уведомление об отправке формы</h2>
-    <p>Форма успешно отправлена, спасибо! :)</p>
-    <button type="button"><span class="visually-hidden">Закрыть окно</span></button>
+    <p class="modal__msg-text">Форма успешно отправлена, спасибо! :)</p>
+    <button class="modal__close-button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
   </section>
 </body>
 

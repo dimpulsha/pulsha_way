@@ -1,5 +1,9 @@
 .country-section {
   margin-bottom: 233px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .country-section__wrapper {
@@ -9,8 +13,24 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  overflow: hidden;
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.country-section__tab-list {
+  @media (max-width: $tablet-max-width) {
+    margin-left: 21px;
+  }
 }
 
 .country-section__tab-body {
   margin-top: 65px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-top: 30px;
+  }
 }

@@ -1,7 +1,20 @@
+.contact-section {
+  margin-bottom: 160px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 80px;
+  }
+}
+
 .contact-section__wrapper {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .contact-section_content {
@@ -13,18 +26,30 @@
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
+
+  @media (max-width: $tablet-max-width) {
+    justify-content: center;
+    background-image: url("../../img/bg/contact-bg-pad@1x.png");
+  }
 }
 
 .contact-section__form {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 656px;
   height: 315px;
-  background-color: $background-light;
+  padding: 50px;
+  background-color: $background-card;
   box-shadow: 0 4px 30px $form-shadow;
   border-radius: 5px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 658px;
+    height: 311px;
+  }
 }
 
 .contact-section__form-body {
@@ -32,5 +57,20 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 25px;
+  width: 100%;
+}
 
+.contact-section__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  color: $title-contact;
+}
+
+.contact-section_text {
+  margin-top: 11px;
+  line-height: 24px;
+  color: $title-contact;
 }
