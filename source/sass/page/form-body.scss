@@ -8,6 +8,12 @@
   margin-right: 19px;
   margin-bottom: 20px;
   border: 1px solid $deko-background-grey;
+
+  @media (max-width: $mobile-max-width) {
+    width: 288px;
+    margin-right: 0;
+    background-color: $form-input-background;
+  }
 }
 
 .form-body__field--modal {
@@ -42,6 +48,11 @@
   line-height: 17px;
   color: $title-contact;
   border: none;
+}
+
+.form-body__input::placeholder {
+  color: $title-contact;
+  opacity: 1;
 }
 
 .form-body__input--modal {

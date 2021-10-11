@@ -15,6 +15,10 @@
     max-width: 100%;
     padding: 0 76px;
   }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 0 15px;
+  }
 }
 
 .owerview-section__head {
@@ -38,6 +42,11 @@
     font-size: 30px;
     line-height: 45px;
   }
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .owerview-section__title br {
@@ -55,5 +64,15 @@
     margin-top: 0;
     line-height: 28px;
     letter-spacing: -0.466667px;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.owerview-section__text br {
+  @media (max-width: $tablet-max-width) {
+    display: none;
   }
 }

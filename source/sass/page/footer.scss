@@ -25,6 +25,11 @@
     width: 100%;
     padding: 0 21px;
   }
+
+  @media (max-width: $mobile-max-width) {
+    display: block;
+    padding: 0 15px;
+  }
 }
 
 .footer__section--travel {
@@ -33,6 +38,12 @@
   @media (max-width: $tablet-max-width) {
     grid-area: travel;
     margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    text-align: center;
+    border-right: none;
+    border-bottom: 1px solid $deko-background-grey;
   }
 }
 
@@ -46,6 +57,11 @@
     border-right: none;
     padding-left: 50px;
     padding-right: 0;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 0;
+    text-align: center;
   }
 }
 
@@ -87,6 +103,11 @@
   @media (max-width: $tablet-max-width) {
     margin-right: 40px;
   }
+
+  @media (max-width: $mobile-max-width) {
+    justify-content: center;
+    margin-right: 0;
+  }
 }
 
 .footer__travel-list {
@@ -94,6 +115,11 @@
   flex-direction: column;
   box-sizing: border-box;
   width: 33%;
+
+  @media (max-width: $mobile-max-width) {
+    width: 50%;
+    margin-bottom: 20px;
+  }
 }
 
 .footer__travel-item {

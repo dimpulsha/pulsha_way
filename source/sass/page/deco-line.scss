@@ -20,6 +20,11 @@
 .deco-line--review {
   height: 1px;
   width: 68px;
+
+  @media (max-width: $tablet-max-width) {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .deco-line--price {

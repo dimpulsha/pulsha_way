@@ -4,7 +4,12 @@
   @media (max-width: $tablet-max-width) {
     margin-bottom: 110px;
   }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 50px;
+  }
 }
+
 
 .price-section__wrapper {
   max-width: 1170px;
@@ -51,6 +56,11 @@
     font-size: 30px;
     line-height: 45px;
   }
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .price-section__text {
@@ -63,6 +73,11 @@
     padding: 0 17px;
     margin-bottom: 30px;
     line-height: 27px;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    padding: 0;
+    margin-bottom: 20px;
   }
 }
 

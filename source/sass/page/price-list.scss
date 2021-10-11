@@ -11,6 +11,11 @@
     padding: 0 56px;
     // margin-left: -50px;
   }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 .price-list__item {
@@ -23,11 +28,17 @@
 
   @media (max-width: $tablet-max-width) {
     // min-width: 288px;
+    max-width: initial;
     width: 100%;
     min-height: 629px;
     margin-right: 50px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin: 0;
+    margin-bottom: 30px;
   }
 }
 

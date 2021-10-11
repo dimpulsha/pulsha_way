@@ -7,10 +7,31 @@
   background-size: cover;
   background-color: $fill-background;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/bg/top-background@2x.jpg");
+  }
+
   @media (max-width: $tablet-max-width) {
     height: 344px;
     margin-bottom: 80px;
     background-image: url("../../img/bg/top-background-pad@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/bg/top-background-pad@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-max-width) {
+    height: auto;
+    // background-position: top;
+    // background-size: 100% 235px;
+    background-color: transparent;
+    // background-image: url("../../img/bg/top-background-mob@1x.jpg");
+    background-image: none;
+
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("../../img/bg/top-background-mob2x.jpg");
+    // }
   }
 }
 
@@ -26,6 +47,11 @@
     padding: 0;
     display: block;
   }
+
+  @media (max-width: $mobile-max-width) {
+    max-width: 100%;
+    padding: 0;
+  }
 }
 
 .top-section__data-wrapper {
@@ -39,6 +65,10 @@
     margin-top: 0;
     padding-top: 60px;
     text-align: center;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 0;
   }
 }
 
@@ -57,6 +87,28 @@
     font-weight: 600;
     font-size: 30px;
     line-height: 45px;
+    letter-spacing: initial;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 235px;
+
+    // margin-bottom: 102px;
+    padding: 0 45px;
+    font-size: 24px;
+    line-height: 36px;
+    background-image: url("../../img/bg/top-background-mob@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $fill-background;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/bg/top-background-mob2x.jpg");
+    }
   }
 }
 
@@ -71,6 +123,12 @@
     text-align: center;
     line-height: 27px;
     letter-spacing: -0.466667px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 0 15px;
+    margin-bottom: 20px;
+    color: $title-color;
   }
 }
 
