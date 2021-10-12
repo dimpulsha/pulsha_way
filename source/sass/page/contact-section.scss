@@ -26,7 +26,7 @@
   // }
 }
 
-.contact-section_content {
+.contact-section__content {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -86,7 +86,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-bottom: 3px;
   width: 100%;
 
   @media (max-width: $mobile-max-width) {
@@ -107,7 +108,7 @@
   }
 }
 
-.contact-section_text {
+.contact-section__text {
   margin-top: 11px;
   line-height: 24px;
   color: $title-contact;

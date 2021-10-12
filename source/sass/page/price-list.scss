@@ -23,8 +23,6 @@
   max-width: 370px;
   width: calc(50% - 15px);
   margin-right: 30px;
-  border: 1px solid $deko-background-grey;
-  border-radius: 6px;
 
   @media (max-width: $tablet-max-width) {
     // min-width: 288px;
@@ -32,8 +30,6 @@
     width: 100%;
     min-height: 629px;
     margin-right: 50px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
   }
 
   @media (max-width: $mobile-max-width) {

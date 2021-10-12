@@ -1,11 +1,26 @@
 .product {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 40px 30px 30px;
+  padding: 38px 30px 30px;
+  background-color: $background-card;
+  // border: 1px solid $deko-background-grey;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px $deko-background-grey;
 
   @media (max-width: $tablet-max-width) {
     padding: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
+}
+
+.product:hover {
+  box-shadow: 0 0 0 3px $accented;
+}
+
+.product:hover .product__check-ico {
+  fill: $super-dark;
 }
 
 .product__header {
@@ -13,7 +28,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   // align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   @media (max-width: $tablet-max-width) {
     flex-direction: column;
@@ -28,7 +43,7 @@
   font-weight: 600;
   font-size: 28px;
   line-height: 38px;
-  letter-spacing: -1.27273px;
+  letter-spacing: -1.07273px;
   color: $price-title;
 
   @media (max-width: $tablet-max-width) {
@@ -39,7 +54,7 @@
   }
 }
 
-.product_price {
+.product__price {
   margin: 0;
   font-weight: 600;
   font-size: 28px;
@@ -54,7 +69,7 @@
   }
 }
 
-.product_attention-text {
+.product__attention-text {
   margin: 0;
   margin-bottom: 28px;
   line-height: 24px;
@@ -66,9 +81,15 @@
   }
 }
 
+.product_attention-text br {
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
+}
+
 .product__feature-list {
   // margin: 0;
-  margin: 30px 20px 0;
+  margin: 30px 20px 15px 0;
 
   @media (max-width: $tablet-max-width) {
     margin-top: 20px;
@@ -76,8 +97,11 @@
 }
 
 .product__feature-item {
+  display: flex;
+  justify-content: flex-start;
   margin-bottom: 15px;
   line-height: 32px;
+  text-align: left;
   color: $title-color;
 
   @media (max-width: $tablet-max-width) {
@@ -85,7 +109,26 @@
   }
 }
 
-.product_button {
+.product__feature-item svg {
+  flex-shrink: 1;
+}
+
+.product__feature-item span {
+  flex-grow: 1;
+}
+
+.product__feature-item-min-margin {
+  margin-bottom: 5px;
+}
+
+.product__check-ico {
+  width: 25px;
+  margin-top: 10px;
+  margin-right: 10px;
+  fill: $accented;
+}
+
+.product__button {
   width: 100%;
   margin-top: auto;
 }

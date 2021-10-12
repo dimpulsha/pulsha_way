@@ -31,7 +31,8 @@
   flex-direction: column;
   justify-content: center;
   //margin-top: 117px;
-  max-width: 310px;
+  max-width: 305px;
+  padding-top: 20px;
   padding-left: 15px;
 
   @media (max-width: $tablet-max-width) {
@@ -46,7 +47,7 @@
 .price-section__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-weight: 600;
   font-size: 55px;
   line-height: 90px;
@@ -97,6 +98,8 @@
 }
 
 .price-section__contact-link {
+  display: flex;
+  align-items: center;
   font-size: 20px;
   line-height: 32px;
   color: $price-link-color;
@@ -106,4 +109,10 @@
     color: $text-accented;
     text-decoration: underline;
   }
+}
+
+.price-section__contact-ico {
+  margin-right: 15px;
+  fill: none;
+  stroke: $accented;
 }

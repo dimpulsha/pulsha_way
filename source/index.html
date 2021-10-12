@@ -13,41 +13,30 @@
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo"><img class="header__logo-img" src="./img/logo.svg" alt="Логотип компании WAY"></a>
-      <nav class="site-nav header__nav site-nav--nojs">
-        <button class="site-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <button class="site-nav__button" type="button"><span class="visually-hidden">Скрыть меню</span></button>
+      <nav class="site-nav site-nav--menu-close">
+        <button class="site-nav__button" type="button"><span class="visually-hidden">Открыть меню</span>
+          <svg class="site-nav__burger-icon" width="23" height="14">
+            <use xlink:href="img/sprite_auto.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
         <ul class="site-nav__menu">
-          <li class="site-nav__menu-item"><a href="#about">О путешествии</a>
-            <svg class="site-nav__menu-ico" width="8" height="12" viewBox="0 0 8 12" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0)">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z"
-                  fill="#2C2E3F" fill-opacity="0.5" />
-              </g>
-              <defs>
-                <clipPath id="clip0">
-                  <rect width="12" height="7.4" fill="white" transform="translate(0 12) rotate(-90)" />
-                </clipPath>
-              </defs>
+          <li class="site-nav__menu-item"><a href="#place">О путешествии</a>
+            <svg class="site-nav__menu-ico" width="23" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
             </svg>
           </li>
           <li class="site-nav__menu-item"><a href="#price">Цены</a>
-            <svg class="site-nav__menu-ico" width="8" height="12" viewBox="0 0 8 12" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0)">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z"
-                  fill="#2C2E3F" fill-opacity="0.5" />
-              </g>
-              <defs>
-                <clipPath id="clip0">
-                  <rect width="12" height="7.4" fill="white" transform="translate(0 12) rotate(-90)" />
-                </clipPath>
-              </defs>
+            <svg class="site-nav__menu-ico" width="23" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
             </svg>
           </li>
         </ul>
       </nav>
-      <a class="header__contact-link" href="tel:++749978468446">+7 (499) -784-684-46</a>
+      <a class="header__contact-link" href="tel:++749978468446">
+        <svg class="header__contact-ico" width="30" height="30">
+          <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+        </svg>
+        +7 (499) -784-684-46</a>
     </div>
   </header>
   <main>
@@ -58,7 +47,7 @@
           <p class="top-section__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а
             также потрясающая красота
             природы.</p>
-          <a class="top-section__link button button--top-section" href="#"><span>Смотреть тур</span>
+          <a class="top-section__link button button--top-section" href="#tour-list"><span>Смотреть тур</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 1V15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               <path d="M15 8L8 15L1 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -66,37 +55,41 @@
         </div>
       </div>
     </section>
-    <section class="owerview-section">
+    <section class="owerview-section" id="place">
       <div class="owerview-section__wrapper">
         <div class="owerview-section__head">
           <h2 class="owerview-section__title">Места <br> посещения</h2>
           <div class="deco-line deco-line--owerview"></div>
-          <p class="owerview-section__text">Вы можете выбрать полный тур <br>или частичный, с посещением первых 3 мест
+          <p class="owerview-section__text">Вы можете выбрать полный тур или <br> частичный, с посещением первых 3 мест
           </p>
         </div>
-        <ul class="owerview-section__place-list place-list">
+        <ul class="place-list">
           <li class="place-list__item place-item">
-            <a class="place-item__link" href="">
-              <!-- переверствать - поддержка разных разрешений -->
-              <!-- <div class="place-item__img-wrapper"> -->
+            <a class="place-item__link" href="#country1">
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/content/greece-tab@1x.webp 1x, img/content/greece-tab@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/greece@1x.webp 1x, img/content/greece@2x.webp 2x">
                 <source type="image/jpeg" media="(max-width: 1023px)"
                   srcset="img/content/greece-tab@1x.jpg 1x, img/content/greece-tab@2x.jpg 2x">
                 <source type="image/jpeg" srcset="img/content/greece@1x.jpg 1x, img/content/greece@2x.jpg 2x">
-                <img class="place-item__img" src="img/content/greece@1px.jpg" alt="Город на скале" width="350"
+                <img class="place-item__img" src="img/content/greece@1x.jpg" alt="Город на скале" width="350"
                   height="430">
               </picture>
-              <!-- </div> -->
               <h3 class="place-item__title">Греция</h3>
               <div class="place-item__shadow-deco">
-                <p class="place-item_link-text">Смотреть подробнее</p>
+                <p class="place-item__link-text">Смотреть подробнее</p>
               </div>
             </a>
           </li>
+
           <li class="place-list__item place-item">
-            <a class="place-item__link" href="">
+            <a class="place-item__link" href="#country2">
               <!-- <div class="place-item__img-wrapper"> -->
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/content/albania-tab@1x.webp 1x, img/content/albania-tab@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/albania@1x.webp 1x, img/content/albania@2x.webp 2x">
                 <source type="image/jpeg" media="(max-width: 1023px)"
                   srcset="img/content/albania-tab@1x.jpg 1x, img/content/albania-tab@2x.jpg 2x">
                 <source type="image/jpeg" srcset="img/content/albania@1x.jpg 1x, img/content/albania@2x.jpg 2x">
@@ -106,14 +99,17 @@
               <!-- </div> -->
               <h3 class="place-item__title">Албания</h3>
               <div class="place-item__shadow-deco">
-                <p class="place-item_link-text">Смотреть подробнее</p>
+                <p class="place-item__link-text">Смотреть подробнее</p>
               </div>
             </a>
           </li>
           <li class="place-list__item place-item">
-            <a class="place-item__link" href="">
+            <a class="place-item__link" href="#country3">
               <!-- <div class="place-item__img-wrapper"> -->
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/content/macedonia-tab@1x.webp 1x, img/content/macedonia-tab@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/macedonia@1x.webp 1x, img/content/macedonia@2x.webp 2x">
                 <source type="image/jpeg" media="(max-width: 1023px)"
                   srcset="img/content/macedonia-tab@1x.jpg 1x, img/content/macedonia-tab@2x.jpg 2x">
                 <source type="image/jpeg" srcset="img/content/macedonia@1x.jpg 1x, img/content/macedonia@2x.jpg 2x">
@@ -123,14 +119,17 @@
               <!-- </div> -->
               <h3 class="place-item__title">Македония</h3>
               <div class="place-item__shadow-deco">
-                <p class="place-item_link-text">Смотреть подробнее</p>
+                <p class="place-item__link-text">Смотреть подробнее</p>
               </div>
             </a>
           </li>
           <li class="place-list__item place-item">
-            <a class="place-item__link" href="">
+            <a class="place-item__link" href="#country4">
               <!-- <div class="place-item__img-wrapper"> -->
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/content/montenegro-tab@1x.webp 1x, img/content/montenegro-tab@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/montenegro@1x.webp 1x, img/content/montenegro@2x.webp 2x">
                 <source type="image/jpeg" media="(max-width: 1023px)"
                   srcset="img/content/montenegro-tab@1x.jpg 1x, img/content/montenegro-tab@2x.jpg 2x">
                 <source type="image/jpeg" srcset="img/content/montenegro@1x.jpg 1x, img/content/montenegro@2x.jpg 2x">
@@ -140,14 +139,17 @@
               <!-- </div> -->
               <h3 class="place-item__title">Черногория</h3>
               <div class="place-item__shadow-deco">
-                <p class="place-item_link-text">Смотреть подробнее</p>
+                <p class="place-item__link-text">Смотреть подробнее</p>
               </div>
             </a>
           </li>
           <li class="place-list__item place-item">
-            <a class="place-item__link" href="">
+            <a class="place-item__link" href="#country5">
               <!-- <div class="place-item__img-wrapper"> -->
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/content/croatia-tab@1x.webp 1x, img/content/croatia-tab@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/croatia@1x.webp 1x, img/content/croatia@2x.webp 2x">
                 <source type="image/jpeg" media="(max-width: 1023px)"
                   srcset="img/content/croatia-tab@1x.jpg 1x, img/content/croatia-tab@2x.jpg 2x">
                 <source type="image/jpeg" srcset="img/content/croatia@1x.jpg 1x, img/content/croatia@2x.jpg 2x">
@@ -157,7 +159,7 @@
               <!-- </div> -->
               <h3 class="place-item__title">Хорватия</h3>
               <div class="place-item__shadow-deco">
-                <p class="place-item_link-text">Смотреть подробнее</p>
+                <p class="place-item__link-text">Смотреть подробнее</p>
               </div>
             </a>
           </li>
@@ -169,17 +171,19 @@
         <div class="country-section__wrapper">
           <h2 class="visually-hidden">Описание стран</h2>
           <div class="country-section__scroll">
-            <ul class="country-section__tab-list tab-list">
-              <li class="tab-list__item"><button class="tab-button tab-button--active tab-button--greece"
+            <ul class="country-section__tab-list tab-list" id="tour-list">
+              <li class="tab-list__item" id="country1"><button class="tab-button tab-button--active tab-button--greece"
                   type="button">Греция</button></li>
-              <li class="tab-list__item"><button class="tab-button tab-button--albania" type="button">Албания</button>
+              <li class="tab-list__item" id="country2"><button class="tab-button tab-button--albania"
+                  type="button">Албания</button>
               </li>
-              <li class="tab-list__item"><button class="tab-button tab-button--macedonia"
+              <li class="tab-list__item" id="country3"><button class="tab-button tab-button--macedonia"
                   type="button">Македония</button>
               </li>
-              <li class="tab-list__item"><button class="tab-button tab-button--montenegro"
+              <li class="tab-list__item" id="country4"><button class="tab-button tab-button--montenegro"
                   type="button">Черногория</button></li>
-              <li class="tab-list__item"><button class="tab-button tab-button-croatia" type="button">Хорватия</button>
+              <li class="tab-list__item" id="country5"><button class="tab-button tab-button-croatia"
+                  type="button">Хорватия</button>
               </li>
             </ul>
           </div>
@@ -200,6 +204,12 @@
               </div>
               <div class="tab-body__img-wrapper">
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/content/tab-greece-mob@1x.webp 1x, img/content/tab-greece-mob@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/content/tab-greece-pad@1x.webp 1x, img/content/tab-greece-pad@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/content/tab-greece@1x.webp 1x, img/content/tab-greece@2x.webp 2x">
                   <source type="image/jpeg" media="(max-width: 767px)"
                     srcset="img/content/tab-greece-mob@1x.jpg 1x, img/content/tab-greece-mob@2x.jpg 2x">
                   <source type="image/jpeg" media="(max-width: 1023px)"
@@ -220,6 +230,7 @@
                     Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
                   <div class="tab-body__author-wrapper">
                     <picture>
+                      <source type="image/webp" srcset="img/content/author1@1x.webp 1x, img/content/author1@2x.webp 2x">
                       <source type="image/jpeg" srcset="img/content/author1@1x.png 1x, img/content/author1@2x.png 2x">
                       <img class="tab-body__review-author-img" src="img/content/author1@1x.png"
                         alt="Аватар автора комментария" width="38" height="38">
@@ -245,13 +256,19 @@
               </div>
               <div class="tab-body__img-wrapper">
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/content/tab-greece-mob@1x.webp 1x, img/content/tab-greece-mob@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/content/tab-greece-pad@1x.webp 1x, img/content/tab-greece-pad@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/content/tab-greece@1x.webp 1x, img/content/tab-greece@2x.webp 2x">
                   <source type="image/jpeg" media="(max-width: 767px)"
                     srcset="img/content/tab-greece-mob@1x.jpg 1x, img/content/tab-greece-mob@2x.jpg 2x">
                   <source type="image/jpeg" media="(max-width: 1023px)"
                     srcset="img/content/tab-greece-pad@1x.jpg 1x, img/content/tab-greece-pad@2x.jpg 2x">
                   <source type="image/jpeg"
                     srcset="img/content/tab-albania@1x.jpg 1x, img/content/tab-albania@2x.jpg 2x">
-                  <img class="tab-body__img" src="./img/content/tab-albania@1x.jpg" alt="Курорт Албании. Вид сверху."
+                  <img class="tab-body__img" src="img/content/tab-albania@1x.jpg" alt="Курорт Албании. Вид сверху."
                     width="430" height="596">
                 </picture>
               </div>
@@ -265,10 +282,12 @@
                     все
                     красоты природы :)</p>
                   <div class="tab-body__author-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/author2@1x.webp 1x, img/content/author2@2x.webp 2x">
                       <source type="image/jpeg" srcset="img/content/author2@1x.png 1x, img/content/author2@2x.png 2x">
-                      <img class="tab-body__review-author-img" src="img/content/author2@1x.png" alt="Аватар автора комментария" width="38"
-                        height="38">
-                      </picture>
+                      <img class="tab-body__review-author-img" src="img/content/author2@1x.png"
+                        alt="Аватар автора комментария" width="38" height="38">
+                    </picture>
                     <cite class="tab-body__review-author">Маришка</cite>
                   </div>
                 </blockquote>
@@ -290,6 +309,12 @@
               </div>
               <div class="tab-body__img-wrapper">
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/content/tab-greece-mob@1x.webp 1x, img/content/tab-greece-mob@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/content/tab-greece-pad@1x.webp 1x, img/content/tab-greece-pad@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/content/tab-greece@1x.webp 1x, img/content/tab-greece@2x.webp 2x">
                   <source type="image/jpeg" media="(max-width: 767px)"
                     srcset="img/content/tab-greece-mob@1x.jpg 1x, img/content/tab-greece-mob@2x.jpg 2x">
                   <source type="image/jpeg" media="(max-width: 1023px)"
@@ -310,10 +335,12 @@
                     так как люди
                     оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
                   <div class="tab-body__author-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/author3@1x.webp 1x, img/content/author3@2x.webp 2x">
                       <source type="image/jpeg" srcset="img/content/author3@1x.png 1x, img/content/author3@2x.png 2x">
-                      <img class="tab-body__review-author-img" src="img/content/author3@1x.png" alt="Аватар автора комментария" width="38"
-                        height="38">
-                      </picture>
+                      <img class="tab-body__review-author-img" src="img/content/author3@1x.png"
+                        alt="Аватар автора комментария" width="38" height="38">
+                    </picture>
                     <cite class="tab-body__review-author">Михаил Кузьмин</cite>
                   </div>
                 </blockquote>
@@ -331,6 +358,12 @@
               </div>
               <div class="tab-body__img-wrapper">
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/content/tab-greece-mob@1x.webp 1x, img/content/tab-greece-mob@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/content/tab-greece-pad@1x.webp 1x, img/content/tab-greece-pad@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/content/tab-greece@1x.webp 1x, img/content/tab-greece@2x.webp 2x">
                   <source type="image/jpeg" media="(max-width: 767px)"
                     srcset="img/content/tab-greece-mob@1x.jpg 1x, img/content/tab-greece-mob@2x.jpg 2x">
                   <source type="image/jpeg" media="(max-width: 1023px)"
@@ -348,10 +381,12 @@
                   <p class="tab-body__review-text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела,
                     разве что в фильмах :) Всем советую</p>
                   <div class="tab-body__author-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/author4@1x.webp 1x, img/content/author4@2x.webp 2x">
                       <source type="image/jpeg" srcset="img/content/author4@1x.png 1x, img/content/author4@2x.png 2x">
-                      <img class="tab-body__review-author-img" src="img/content/author4@1x.png" alt="Аватар автора комментария" width="38"
-                        height="38">
-                      </picture>
+                      <img class="tab-body__review-author-img" src="img/content/author4@1x.png"
+                        alt="Аватар автора комментария" width="38" height="38">
+                    </picture>
                     <cite class="tab-body__review-author">Анастасия Мей</cite>
                   </div>
                 </blockquote>
@@ -374,6 +409,12 @@
               </div>
               <div class="tab-body__img-wrapper">
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/content/tab-greece-mob@1x.webp 1x, img/content/tab-greece-mob@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/content/tab-greece-pad@1x.webp 1x, img/content/tab-greece-pad@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/content/tab-greece@1x.webp 1x, img/content/tab-greece@2x.webp 2x">
                   <source type="image/jpeg" media="(max-width: 767px)"
                     srcset="img/content/tab-greece-mob@1x.jpg 1x, img/content/tab-greece-mob@2x.jpg 2x">
                   <source type="image/jpeg" media="(max-width: 1023px)"
@@ -394,10 +435,12 @@
                     тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу
                     :)</p>
                   <div class="tab-body__author-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/author5@1x.webp 1x, img/content/author5@2x.webp 2x">
                       <source type="image/jpeg" srcset="img/content/author5@1x.png 1x, img/content/author5@2x.png 2x">
-                      <img class="tab-body__review-author-img" src="img/content/author5@1x.png" alt="Аватар автора комментария" width="38"
-                        height="38">
-                      </picture>
+                      <img class="tab-body__review-author-img" src="img/content/author5@1x.png"
+                        alt="Аватар автора комментария" width="38" height="38">
+                    </picture>
                     <cite class="tab-body__review-author">Владимир Мулицин</cite>
                   </div>
                 </blockquote>
@@ -406,7 +449,7 @@
           </ul>
         </div>
       </section>
-      <section class="price-section">
+      <section class="price-section" id="price">
         <div class="price-section__wrapper">
           <div class="price-section__content-wrapper">
             <h2 class="price-section__title">Цены</h2>
@@ -416,41 +459,92 @@
               возможностей.
               Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
             <p class="price-section__contact-text">Свяжитесь с нами</p>
-            <a class="price-section__contact-link" href="tel:++749978468446">+7 (499) -784-684-46</a>
+            <a class="price-section__contact-link" href="tel:++749978468446">
+              <svg class="price-section__contact-ico" width="30" height="30">
+                <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+              </svg>+7 (499) -784-684-46</a>
           </div>
           <ul class="price-section__price-list price-list">
             <li class="price-list__item product">
               <div class="product__header">
                 <h3 class="product__title">Комплексный</h3>
-                <p class="product_price">$1999</p>
+                <p class="product__price">$1999</p>
               </div>
-              <p class="product_attention-text">Ознакомьтесь с перечнем того,
-                <!-- <br> --> что входит в данный пакет
+              <p class="product__attention-text">Ознакомьтесь с перечнем того,
+                <br> что входит в данный пакет
               </p>
               <div class="deco-line deco-line--price"></div>
               <ul class="product__feature-list">
-                <li class="product__feature-item">Разработанный маршрут с гидом группы</li>
-                <li class="product__feature-item">Перелет, трансфер и проживание в отелях</li>
-                <li class="product__feature-item">Завтраки, ужины в отелях и ланчи на природе</li>
-                <li class="product__feature-item">Экскурсии по удивительно красивым местам Европы</li>
+                <li class="product__feature-item product__feature-item-min-margin">
+                  <svg class="product__check-ico" width="20" height="20">
+                    <use xlink:href="img/sprite_auto.svg#icon-check"></use>
+                  </svg>
+                  <span>Разработанный маршрут с гидом группы</span>
+                </li>
+                <li class="product__feature-item">
+                  <svg class="product__check-ico" width="20" height="20">
+                    <use xlink:href="img/sprite_auto.svg#icon-check"></use>
+                  </svg>
+                  <span>Перелет, трансфер и проживание в отелях</span>
+                </li>
+                <li class="product__feature-item">
+                  <svg class="product__check-ico" width="20" height="20">
+                    <use xlink:href="img/sprite_auto.svg#icon-check"></use>
+                  </svg>
+                  <span>Завтраки, ужины в отелях и ланчи на природе</span>
+                </li>
+                <li class="product__feature-item">
+                  <svg class="product__check-ico" width="20" height="20">
+                    <use xlink:href="img/sprite_auto.svg#icon-check"></use>
+                  </svg>
+                  <span>Экскурсии по удивительно красивым местам Европы</span>
+                </li>
               </ul>
-              <button class="button product_button" type="button">Купить тур сейчас</button>
+              <button class="button product__button" type="button">Купить тур сейчас</button>
             </li>
             <li class="price-list__item product">
               <div class="product__header">
                 <h3 class="product__title">Экономный</h3>
-                <p class="product_price">$1399</p>
+                <p class="product__price">$1399</p>
               </div>
-              <p class="product_attention-text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              <p class="product__attention-text">Ознакомьтесь с перечнем того, <br> что входит в данный пакет</p>
               <div class="deco-line deco-line--price"></div>
               <ul class="product__feature-list">
-                <li class="product__feature-item">Разработанный маршрут с гидом группы</li>
-                <li class="product__feature-item">Перелет и трансфер</li>
-                <li class="product__feature-item">Проживание в хостелах при отелях</li>
-                <li class="product__feature-item">Только завтраки в отелях</li>
-                <li class="product__feature-item">Экскурсии по удивительно красивым местам Европы</li>
+                <li class="product__feature-item">
+                  <svg class="product__check-ico" width="20" height="20">
+                    <use xlink:href="img/sprite_auto.svg#icon-check"></use>
+                  </svg>
+                  <span>Разработанный маршрут с гидом группы</span>
+                </li>
+                <li class="product__feature-item">
+                  <svg class="product__check-ico" width="20" height="20">
+                    <use xlink:href="img/sprite_auto.svg#icon-check"></use>
+                  </svg>
+                  <span>Перелет и трансфер</span>
+                </li>
+                <li class="product__feature-item">
+                  <svg class="product__check-ico" width="20" height="20">
+                    <use xlink:href="img/sprite_auto.svg#icon-check"></use>
+                  </svg>
+
+                  <span>Проживание в хостелах при отелях</span>
+                </li>
+                <li class="product__feature-item">
+                  <svg class="product__check-ico" width="20" height="20">
+                    <use xlink:href="img/sprite_auto.svg#icon-check"></use>
+                  </svg>
+                  <span>Только завтраки в отелях</span>
+
+                </li>
+                <li class="product__feature-item">
+                  <svg class="product__check-ico" width="20" height="20">
+                    <use xlink:href="img/sprite_auto.svg#icon-check"></use>
+                  </svg>
+                  <span>Экскурсии по удивительно красивым местам Европы</span>
+
+                </li>
               </ul>
-              <button class="button product_button" type="button">Купить тур сейчас</button>
+              <button class="button product__button" type="button">Купить тур сейчас</button>
             </li>
           </ul>
         </div>
@@ -458,26 +552,25 @@
     </div>
     <section class="contact-section">
       <div class="contact-section__wrapper">
-        <!-- <div class="contact-section__form-wrapper"> -->
-          <div class="contact-section_content">
-            <h2 class="visually-hidden">Обратная связь</h2>
-            <form class="contact-section__form" action="#" method="post">
-              <p class="contact-section__title">У Вас остались вопросы?</p>
-              <p class="contact-section_text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-              <div class="contact-section__form-body form-body">
-                <div class="form-body__field form-body__field--phone">
-                  <label class="form-body__label" for="tel-id"><span class="visually-hidden">Телефон:</span>+7</label>
-                  <input class="form-body__input" type="tel" name="phone" id="tel-id"
-                    placeholder="Введите 10 цифр номера" required>
-                </div>
-                <div class="form-body__field form-body__email">
-                  <label class="form-body__label" for="email-id">E-mail</label>
-                  <input class="form-body__input" type="email" name="email" id="email-id">
-                </div>
+        <div class="contact-section__content">
+          <h2 class="visually-hidden">Обратная связь</h2>
+          <form class="contact-section__form" action="#" method="post">
+            <p class="contact-section__title">У Вас остались вопросы?</p>
+            <p class="contact-section__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+            <div class="contact-section__form-body form-body">
+              <div class="form-body__field form-body__field--phone">
+                <label class="form-body__label form-body__label--required" for="tel-id"><span
+                    class="visually-hidden">Телефон:</span>+7</label>
+                <input class="form-body__input form-body__input--tel" type="tel" name="phone" id="tel-id"
+                  placeholder="Введите 10 цифр номера" required>
               </div>
-              <button class="button button--submit-contact" type="submit">Отправить</button>
-            </form>
-          <!-- </div> -->
+              <div class="form-body__field form-body__email">
+                <label class="form-body__label" for="email-id">E-mail</label>
+                <input class="form-body__input" type="email" name="email" id="email-id">
+              </div>
+            </div>
+            <button class="button button--submit-contact" type="submit">Отправить</button>
+          </form>
         </div>
       </div>
     </section>
@@ -513,18 +606,23 @@
         </div>
       </section>
       <section class="footer__section footer__section--contact">
-        <h2 class="footer__title">Наши контакты</h2>
+        <h2 class="footer__title footer__title--contact">Наши контакты</h2>
         <div>
-          <a class="footer__contact-link footer__contact-link--email"
-            href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-          <a class="footer__contact-link footer__contact-link--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+          <a class="footer__contact-link footer__contact-link--email" href="mailto:puteshestviemechta@gmail.ru"><svg
+              class="footer__contact-ico" width="26" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
+            </svg>puteshestviemechta@gmail.ru</a>
+          <a class="footer__contact-link footer__contact-link--phone" href="tel:+749978468446">
+            <svg class="footer__contact-ico" width="30" height="30">
+              <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+            </svg>+7 (499) -784-684-46</a>
         </div>
       </section>
       <section class="footer__section footer__section--corporate">
         <h2 class="footer__title footer__title--corporate">Корпоративные путешествия</h2>
         <p class="footer__text footer__text--corporate">Также вы можете заказать индивидуальное путешествие под вашу
-          компанию. Подобные туры
-          очень сближают компанию, помогают поддерживать корпоративный дух, а также являются отличным
+          компанию. <br> Подобные туры
+          очень сближают <br>компанию, помогают поддерживать <br>корпоративный дух, а также являются отличным
           времяпрепровождением</p>
       </section>
     </div>
@@ -539,18 +637,17 @@
       <form action="#" method="post">
         <div class="modal__form-body form-body">
           <div class="form-body__field form-body__field--modal form-body__field--phone">
-            <label class="form-body__label" for="tel-id"><span class="visually-hidden">Телефон:</span>+7</label>
-            <input class="form-body__input form-body__input--modal" type="tel" name="phone" id="tel-id"
+            <label class="form-body__label" for="tel-id-modal"><span class="visually-hidden">Телефон:</span>+7</label>
+            <input class="form-body__input form-body__input--modal" type="tel" name="phone" id="tel-id-modal"
               placeholder="Введите 10 цифр номера" required>
           </div>
           <div class="form-body__field form-body__email">
-            <label class="form-body__label" for="email-id">E-mail</label>
-            <input class="form-body__input form-body__input--modal" type="email" name="email" id="email-id">
+            <label class="form-body__label" for="email-id-modal">E-mail</label>
+            <input class="form-body__input form-body__input--modal" type="email" name="email" id="email-id-modal">
           </div>
           <button class="button button--submit-contact" type="submit">Отправить</button>
         </div>
       </form>
-    </div>
     </div>
     <button class="modal__close-button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
   </section>

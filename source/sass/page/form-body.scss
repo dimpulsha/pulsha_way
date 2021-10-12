@@ -35,19 +35,35 @@
 }
 
 .form-body__label {
+  position: relative;
   margin-right: 7px;
   font-size: 14px;
   line-height: 17px;
   color: $title-contact;
 }
 
+.form-body__label--required::before {
+  position: absolute;
+  content: "*";
+  color: $accented;
+  width: 5px;
+  height: 5px;
+  top: -10px;
+  left: -12px;
+  // background-color: yellow;
+}
+
 .form-body__input {
-  // width: auto;
+  //  width: auto;
   padding: 0;
   font-size: 14px;
   line-height: 17px;
   color: $title-contact;
   border: none;
+}
+
+.form-body__input--tel {
+  width: 190px;
 }
 
 .form-body__input::placeholder {

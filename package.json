@@ -28,8 +28,10 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
+    "build2": "gulp build2",
     "build": "gulp build",
     "start": "gulp start",
+    "start2": "gulp start2",
     "webp": "gulp webp",
     "sprite": "gulp sprite"
   },

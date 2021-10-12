@@ -79,17 +79,23 @@
 
 .footer__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-weight: 600;
   font-size: 18px;
   line-height: 32px;
   color: $footer-title;
 }
 
+.footer__title--contact {
+  margin-bottom: 23px;
+}
+
 .footer__title--corporate {
+  margin-bottom: 20px;
+
   @media (max-width: $tablet-max-width) {
     margin-top: 30px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
   }
 }
 // .footer__section {
@@ -149,10 +155,18 @@
 
 .footer__text--corporate {
   line-height: 24px;
+  margin: 0;
+}
+
+.footer__text--corporate br {
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
 }
 
 .footer__contact-link {
-  display: block;
+  display: flex;
+  align-items: center;
   margin-bottom: 23px;
   color: $footer-link;
   text-decoration: underline;
@@ -163,7 +177,19 @@
   line-height: 17px;
 }
 
+
+
+.footer__contact-ico {
+  margin-right: 13px;
+  fill: none;
+  stroke: $footer-ico;
+}
+
 .footer__contact-link--phone {
   font-size: 16px;
   line-height: 32px;
+}
+
+.footer__contact-link--phone .footer__contact-ico {
+  margin-right: 10px;
 }
