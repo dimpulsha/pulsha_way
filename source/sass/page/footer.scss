@@ -15,7 +15,7 @@
 
   @media (max-width: $tablet-max-width) {
     box-sizing: border-box;
-    grid-template-columns: 51% 49%;
+    grid-template-columns: 55% 45%;
     grid-template-rows: auto auto;
 
     grid-template-areas:
@@ -37,7 +37,7 @@
 
   @media (max-width: $tablet-max-width) {
     grid-area: travel;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -84,6 +84,10 @@
   font-size: 18px;
   line-height: 32px;
   color: $footer-title;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .footer__title--contact {
@@ -107,7 +111,7 @@
   flex-wrap: wrap;
 
   @media (max-width: $tablet-max-width) {
-    margin-right: 40px;
+    margin-right: 20px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -133,6 +137,7 @@
   margin-bottom: 3px;
 
   @media (max-width: $tablet-max-width) {
+    // padding-right: 15px;
     margin-bottom: 10px;
   }
 }

@@ -95,8 +95,11 @@
   color: $title-color;
 
   @media (max-width: $tablet-max-width) {
+    margin-top: 0;
+    margin-bottom: 20px;
     font-size: 30px;
     line-height: 45px;
+    letter-spacing: initial;
   }
 
   @media (max-width: $mobile-max-width) {

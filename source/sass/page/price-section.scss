@@ -37,7 +37,7 @@
 
   @media (max-width: $tablet-max-width) {
     max-width: 100%;
-    padding-left: 0;
+    padding: 0;
     margin-bottom: 40px;
     // width: 100%;
     text-align: center;
@@ -72,11 +72,11 @@
   @media (max-width: $tablet-max-width) {
     margin-top: 0;
     padding: 0 17px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     line-height: 27px;
   }
 
-  @media (max-width: $tablet-max-width) {
+  @media (max-width: $mobile-max-width) {
     padding: 0;
     margin-bottom: 20px;
   }
@@ -92,6 +92,7 @@
   color: $title-contact;
 
   @media (max-width: $tablet-max-width) {
+    margin-bottom: 10px;
     padding-left: 0;
     font-size: 18px;
   }
@@ -105,6 +106,7 @@
   color: $price-link-color;
 
   @media (max-width: $tablet-max-width) {
+    display: block;
     font-size: 18px;
     color: $text-accented;
     text-decoration: underline;
@@ -115,4 +117,8 @@
   margin-right: 15px;
   fill: none;
   stroke: $accented;
+
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
 }

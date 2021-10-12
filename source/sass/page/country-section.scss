@@ -33,7 +33,7 @@
 .country-section__scroll {
   @media (max-width: $tablet-max-width) {
     width: calc(100% - 15px);
-    padding-left: 15px;
+    // margin-left: 15px;
     overflow: hidden;
   }
 }
