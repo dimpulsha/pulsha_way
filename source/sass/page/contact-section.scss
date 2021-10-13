@@ -97,6 +97,7 @@
 
   @media (max-width: $mobile-max-width) {
     flex-direction: column;
+    margin-top: 5px;
   }
 }
 
@@ -118,6 +119,7 @@
   color: $title-contact;
 
   @media (max-width: $mobile-max-width) {
+    margin-top: 20px;
     padding: 0 15px;
   }
 }

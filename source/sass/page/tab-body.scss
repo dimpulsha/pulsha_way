@@ -30,6 +30,7 @@
 
   @media (max-width: $mobile-max-width) {
     margin-bottom: 50px;
+    padding: 0 15px;
   }
 }
 
@@ -77,11 +78,17 @@
   }
 
   @media (max-width: $mobile-max-width) {
+    box-sizing: border-box;
     text-align: center;
+    // padding-top: 20px;
+    // padding: 0;
+    // padding-top: 20px;
     width: 268px;
-    min-height: 431px;
-    margin-top: 50px;
-    padding: 30px 20px 34px;
+    min-height: 430px;
+    // margin-top: 50px;
+    margin-top: 0;
+
+    padding: 30px 20px 0;
   }
 }
 
@@ -122,6 +129,7 @@
 
   @media (max-width: $mobile-max-width) {
     padding: 0;
+    margin-bottom: 8px;
   }
 }
 

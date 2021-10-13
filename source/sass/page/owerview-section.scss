@@ -4,6 +4,10 @@
   @media (max-width: $tablet-max-width) {
     margin-bottom: 55px;
   }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 5px;
+  }
 }
 
 .owerview-section__wrapper {

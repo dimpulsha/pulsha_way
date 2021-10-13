@@ -92,6 +92,10 @@
 
 .footer__title--contact {
   margin-bottom: 23px;
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .footer__title--corporate {
@@ -117,6 +121,7 @@
   @media (max-width: $mobile-max-width) {
     justify-content: center;
     margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -139,6 +144,10 @@
   @media (max-width: $tablet-max-width) {
     // padding-right: 15px;
     margin-bottom: 10px;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    padding: 0;
   }
 }
 
@@ -175,6 +184,10 @@
   margin-bottom: 23px;
   color: $footer-link;
   text-decoration: underline;
+
+  @media (max-width: $mobile-max-width) {
+    justify-content: center;
+  }
 }
 
 .footer__contact-link--email {

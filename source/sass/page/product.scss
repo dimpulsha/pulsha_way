@@ -35,6 +35,10 @@
     justify-content: flex-start;
     align-items: center;
     margin: 30px 20px 10px;
+
+    @media (max-width: $mobile-max-width) {
+      margin-bottom: 13px;
+    }
   }
 }
 
@@ -79,11 +83,20 @@
     text-align: center;
     margin: 0 20px 10px;
   }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 8px;
+  }
 }
 
-.product_attention-text br {
+.product__attention-text br {
   @media (max-width: $tablet-max-width) {
     display: none;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    display: none;
+    margin-bottom: 7px;
   }
 }
 
@@ -94,6 +107,10 @@
   @media (max-width: $tablet-max-width) {
     margin-top: 20px;
     margin-left: 20px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-left: 24px;
   }
 }
 

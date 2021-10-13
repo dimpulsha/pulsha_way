@@ -25,6 +25,10 @@
     margin-right: auto;
     display: block;
   }
+
+  @media (max-width: $mobile-max-width) {
+    margin: 0 auto;
+  }
 }
 
 .deco-line--price {

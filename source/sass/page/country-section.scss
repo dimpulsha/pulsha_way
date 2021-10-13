@@ -6,7 +6,7 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    margin-bottom: 45px;
+    margin-bottom: 60px;
   }
 }
 
@@ -36,10 +36,11 @@
     // margin-left: 15px;
     overflow: hidden;
   }
+
+  @media (max-width: $mobile-max-width) {
+    margin-left: 15px;
+  }
 }
-//   @media (max-width: $mobile-max-width) {
-//     padding-left: 15px;
-//   }
 // }
 
 .country-section__tab-list {
@@ -61,6 +62,6 @@
 
   @media (max-width: $mobile-max-width) {
     margin-top: 24px;
-    padding: 0 15px;
+    // padding: 0 15px;
   }
 }
