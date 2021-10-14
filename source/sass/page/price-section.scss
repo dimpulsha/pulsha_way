@@ -21,7 +21,8 @@
 
   @media (max-width: $tablet-max-width) {
     box-sizing: border-box;
-    width: 100%;
+    // max-width: 100%;
+    max-width: auto;
     flex-direction: column;
   }
 }

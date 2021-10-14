@@ -36,7 +36,8 @@
   padding: 0 15px;
 
   @media (max-width: $tablet-max-width) {
-    max-width: 100%;
+    // max-width: 100%;
+    max-width: auto;
     padding: 0;
     display: block;
   }

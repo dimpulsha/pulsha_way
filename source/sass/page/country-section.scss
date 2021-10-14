@@ -3,6 +3,7 @@
 
   @media (max-width: $tablet-max-width) {
     margin-bottom: 80px;
+    overflow: hidden;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -17,11 +18,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  // overflow: hidden;
+  //
 
   @media (max-width: $tablet-max-width) {
-    width: 100%;
+    // width: 100%;
+    max-width: auto;
     padding: 0;
+    overflow: hidden;
   }
 
   // @media (max-width: $mobile-max-width) {

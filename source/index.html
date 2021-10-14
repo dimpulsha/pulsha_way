@@ -15,7 +15,7 @@
   <link rel="preload" href="fonts/montserrat-semibold.woff" as="font" type="font/woff" crossorigin="anonymous">
 </head>
 
-<body class="page">
+<body class="page page--modal-open">
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo"><img class="header__logo-img" src="./img/logo.svg" alt="Логотип компании WAY"></a>
@@ -633,34 +633,46 @@
     </div>
   </footer>
 
-  <section class="modal modal_buy">
-    <div class="modal__img-wrapper">
-      <img src="img/content/modal@1x.jpg" alt="Морское побережье" width="338" height="444">
-    </div>
-    <div class="modal__content-wrapper">
-      <h2 class="modal__titie">Купить тур</h2>
-      <form action="#" method="post">
-        <div class="modal__form-body form-body">
-          <div class="form-body__field form-body__field--modal form-body__field--phone">
-            <label class="form-body__label" for="tel-id-modal"><span class="visually-hidden">Телефон:</span>+7</label>
-            <input class="form-body__input form-body__input--modal" type="tel" name="phone" id="tel-id-modal"
-              placeholder="Введите 10 цифр номера" required>
+  <section class="modal-section">
+    <div class="modal modal_buy">
+      <div class="modal__img-wrapper">
+        <img src="img/content/modal@1x.jpg" alt="Морское побережье" width="338" height="444">
+      </div>
+      <div class="modal__content-wrapper">
+        <h2 class="modal__titie">Купить тур</h2>
+        <form action="#" method="post">
+          <div class="modal__form-body form-body">
+            <div class="form-body__field form-body__field--modal form-body__field--phone">
+              <label class="form-body__label" for="tel-id-modal"><span class="visually-hidden">Телефон:</span>+7</label>
+              <input class="form-body__input form-body__input--modal" type="tel" name="phone" id="tel-id-modal"
+                placeholder="Введите 10 цифр номера" required>
+            </div>
+            <div class="form-body__field form-body__email">
+              <label class="form-body__label" for="email-id-modal">E-mail</label>
+              <input class="form-body__input form-body__input--modal" type="email" name="email" id="email-id-modal">
+            </div>
+            <button class="button button--submit-contact" type="submit">Отправить</button>
           </div>
-          <div class="form-body__field form-body__email">
-            <label class="form-body__label" for="email-id-modal">E-mail</label>
-            <input class="form-body__input form-body__input--modal" type="email" name="email" id="email-id-modal">
-          </div>
-          <button class="button button--submit-contact" type="submit">Отправить</button>
-        </div>
-      </form>
+        </form>
+      </div>
+      <button class="modal__close-button" type="button"><span class="visually-hidden">Закрыть окно</span>
+        <svg class="modal__close-ico" width="22" height="22">
+          <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+        </svg></button>
     </div>
-    <button class="modal__close-button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+    <div class="modal modal_ok">
+      <h2 class="visually-hidden">Уведомление об отправке формы</h2>
+      <p class="modal__msg-text">Форма успешно отправлена, спасибо! :)</p>
+      <button class="modal__close-button" type="button"><span class="visually-hidden">Закрыть окно</span>
+        <svg class="modal__close-ico" width="24" height="25">
+          <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+        </svg>
+      </button>
+    </div>
   </section>
-  <section class="modal modal_ok">
-    <h2 class="visually-hidden">Уведомление об отправке формы</h2>
-    <p class="modal__msg-text">Форма успешно отправлена, спасибо! :)</p>
-    <button class="modal__close-button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
-  </section>
+  <!-- <section class="modal-section">
+
+  </section> -->
 </body>
 
 </html>

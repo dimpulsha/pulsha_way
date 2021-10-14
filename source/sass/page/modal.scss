@@ -1,7 +1,11 @@
 .modal_buy {
   display: none;
-  position: relative;
+  // position: relative;
   // display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 728px;
   height: 444px;
   background-color: $modal-background;
@@ -29,7 +33,33 @@
 
 .modal__close-button {
   position: absolute;
-  display: none;
+  top: 20px;
+  right: 20px;
+  display: block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  // display: none;
+}
+
+.modal__close-ico {
+  fill: none;
+  stroke: $footer-ico-dark;
+  stroke-opacity: 0.2;
+
+  // stroke="#141517" stroke-opacity=".2"
+}
+
+.modal__close-button:hover .modal__close-ico {
+  stroke: $hover-link;
+  stroke-width: 2;
+  stroke-opacity: 1;
+}
+
+.modal__close-button:active .modal__close-ico {
+  stroke: $footer-ico-dark;
+  stroke-width: 2;
+  stroke-opacity: 0.5;
 }
 
 .modal__titie {
@@ -40,9 +70,18 @@
 }
 
 .modal_ok {
-  display: none;
+  // display: none;
+  position: absolute;
+  display: flex;
   justify-content: center;
   align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 728px;
+  height: 444px;
+  background-color: $modal-background;
+  box-shadow: 0 4px 30px $form-shadow;
 }
 
 .modal__msg-text {

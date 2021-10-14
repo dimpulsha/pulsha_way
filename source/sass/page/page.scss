@@ -1,7 +1,11 @@
-// .page {
-//   // display: grid;
-//   // grid-template-rows: max-content 1fr auto;
-//   // min-height: 100vh;
+.page {
+  // display: grid;
+  // grid-template-rows: auto 1fr auto;
+  // min-height: 100vh;
+}
+
+// .page--modal-open {
+//   // overflow: hidden;
 // }
 
 .page__word-background {
@@ -13,7 +17,8 @@
   background-image: url("../../img/europe-bg.svg");
 
   @media (max-width: $tablet-max-width) {
-    width: 100%;
+    // max-width: 100%;
+    max-width: auto;
     margin: 0;
     padding: 0;
     background-image: none;
