@@ -9,6 +9,10 @@
 
   background-color: transparentize($dark-light, 0.4);
   z-index: 999;
+
+  // @media (max-width: $mobile-max-width) {
+  //   padding: 0 15px;
+  // }
 }
 
 .modal-section--open {

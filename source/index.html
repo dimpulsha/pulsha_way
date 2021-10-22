@@ -19,10 +19,15 @@
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo"><img class="header__logo-img" src="./img/logo.svg" alt="Логотип компании WAY"></a>
-      <nav class="site-nav site-nav--menu-close">
+      <nav class="site-nav site-nav--nojs">
+        <!-- site-nav--menu-open site-nav--nojs -->
         <button class="site-nav__button" type="button"><span class="visually-hidden">Открыть меню</span>
+          <!-- "открыть меню" - правильно будет сделать через aria -->
           <svg class="site-nav__burger-icon" width="23" height="14">
             <use xlink:href="img/sprite_auto.svg#icon-menu-burger"></use>
+          </svg>
+          <svg class="site-nav__close-icon" width="24" height="24">
+            <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
           </svg>
         </button>
         <ul class="site-nav__menu">
@@ -206,7 +211,7 @@
                   достигающих в высоту 600 метров, наградой
                   будет
                   неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
-                <button class="tab-body__button button button--tab " type="button">Купить тур сейчас</button>
+                <button class="tab-body__button button button--tab button--modal-buy" type="button">Купить тур сейчас</button>
               </div>
               <div class="tab-body__img-wrapper">
                 <picture>
@@ -258,7 +263,7 @@
                   на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако,
                   присмотревшись, можно
                   понять, что это не песок, а камни, перетёртые до такого мелкого состояния.</p>
-                <button class="tab-body__button button button--tab " type="button">Купить тур сейчас</button>
+                <button class="tab-body__button button button--tab button--modal-buy" type="button">Купить тур сейчас</button>
               </div>
               <div class="tab-body__img-wrapper">
                 <picture>
@@ -311,7 +316,7 @@
                   находится
                   археологический
                   памятник Кокино в длину около 100 метров.</p>
-                <button class="tab-body__button button button--tab " type="button">Купить тур сейчас</button>
+                <button class="tab-body__button button button--tab button--modal-buy" type="button">Купить тур сейчас</button>
               </div>
               <div class="tab-body__img-wrapper">
                 <picture>
@@ -360,7 +365,7 @@
                 <p class="tab-body__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в
                   некоторых местах высотой берегов доходит до
                   1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.</p>
-                <button class="tab-body__button button button--tab " type="button">Купить тур сейчас</button>
+                <button class="tab-body__button button button--tab button--modal-buy" type="button">Купить тур сейчас</button>
               </div>
               <div class="tab-body__img-wrapper">
                 <picture>
@@ -411,7 +416,7 @@
                   сталагмитами
                   —
                   формировавшимися тысячи и тысячи лет.</p>
-                <button class="tab-body__button button button--tab " type="button">Купить тур сейчас</button>
+                <button class="tab-body__button button button--tab button--modal-buy" type="button">Купить тур сейчас</button>
               </div>
               <div class="tab-body__img-wrapper">
                 <picture>
@@ -505,7 +510,7 @@
                   <span>Экскурсии по удивительно красивым местам Европы</span>
                 </li>
               </ul>
-              <button class="button product__button" type="button">Купить тур сейчас</button>
+              <button class="button product__button button--modal-buy" type="button">Купить тур сейчас</button>
             </li>
             <li class="price-list__item product">
               <div class="product__header">
@@ -549,7 +554,7 @@
 
                 </li>
               </ul>
-              <button class="button product__button" type="button">Купить тур сейчас</button>
+              <button class="button product__button button--modal-buy" type="button">Купить тур сейчас</button>
             </li>
           </ul>
         </div>
@@ -564,14 +569,17 @@
             <p class="contact-section__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
             <div class="contact-section__form-body form-body">
               <div class="form-body__field form-body__field--phone">
-                <label class="form-body__label form-body__label--required" for="tel-id"><span
+                <label class="form-body__label form-body__label--phone form-body__label--required" for="tel-id"><span
                     class="visually-hidden">Телефон:</span>+7</label>
                 <input class="form-body__input form-body__input--tel" type="tel" name="phone" id="tel-id"
                   placeholder="Введите 10 цифр номера" required>
               </div>
               <div class="form-body__field form-body__email">
-                <label class="form-body__label" for="email-id">E-mail</label>
-                <input class="form-body__input" type="email" name="email" id="email-id">
+                <label class="form-body__label  form-body__label--email" for="email-id">E-mail</label>
+                <!-- <div class="form-body__input-wrapper"> -->
+                  <!-- обертка не поможет -->
+                  <input class="form-body__input form-body__input--email" type="email" name="email" id="email-id">
+                <!-- </div> -->
               </div>
             </div>
             <button class="button button--submit-contact" type="submit">Отправить</button>
@@ -634,15 +642,17 @@
   </footer>
 
   <section class="modal-section">
-    <div class="modal modal_buy">
+    <div class="modal modal__buy ">
+      <!-- можно фоном сделать ? но я решил, что может меняться картинка-->
       <div class="modal__img-wrapper">
         <img src="img/content/modal@1x.jpg" alt="Морское побережье" width="338" height="444">
       </div>
       <div class="modal__content-wrapper">
         <h2 class="modal__titie">Купить тур</h2>
         <form action="#" method="post">
-          <div class="modal__form-body form-body">
+          <div class="modal__form-body form-body ">
             <div class="form-body__field form-body__field--modal form-body__field--phone">
+              <!-- можно цифровой шаблон номера -->
               <label class="form-body__label" for="tel-id-modal"><span class="visually-hidden">Телефон:</span>+7</label>
               <input class="form-body__input form-body__input--modal" type="tel" name="phone" id="tel-id-modal"
                 placeholder="Введите 10 цифр номера" required>
@@ -673,6 +683,9 @@
   <!-- <section class="modal-section">
 
   </section> -->
+  <script async src="./js/nav.js"></script>
+  <script async src="./js/modal.js"></script>
+
 </body>
 
 </html>

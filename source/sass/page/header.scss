@@ -26,6 +26,7 @@
   position: absolute;
   top: 39px;
   left: 15px;
+  z-index: 999;
 
   @media (max-width: $tablet-max-width) {
     top: 14px;
